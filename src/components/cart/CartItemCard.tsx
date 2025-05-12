@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CartItem } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { Plus, Minus, Trash2 } from "lucide-react";
+import { formatCurrency } from "@/lib/constants";
 
 interface CartItemCardProps {
   item: CartItem;
@@ -26,7 +27,7 @@ const CartItemCard: React.FC<CartItemCardProps> = ({ item }) => {
         <div className="flex justify-between">
           <h3 className="font-medium">{item.menuItem.name}</h3>
           <span className="font-semibold">
-            ${(item.menuItem.price * item.quantity).toFixed(2)}
+            {formatCurrency(item.menuItem.price * item.quantity)}
           </span>
         </div>
         

@@ -9,6 +9,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Clock, MapPin, CreditCard } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
+import { formatCurrency } from "@/lib/constants";
 
 const OrderDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -109,7 +110,7 @@ const OrderDetail = () => {
                 )}
               </div>
               <p className="font-medium">
-                ${(item.quantity * item.menuItem.price).toFixed(2)}
+                {formatCurrency(item.quantity * item.menuItem.price)}
               </p>
             </div>
           ))}
@@ -118,7 +119,7 @@ const OrderDetail = () => {
           
           <div className="flex justify-between font-semibold">
             <span>Total</span>
-            <span>${order.total.toFixed(2)}</span>
+            <span>{formatCurrency(order.total)}</span>
           </div>
         </div>
         

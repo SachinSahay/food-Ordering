@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Restaurant } from "@/types";
 import { Star, Clock } from "lucide-react";
+import { formatCurrency } from "@/lib/constants";
 
 interface RestaurantCardProps {
   restaurant: Restaurant;
@@ -43,7 +44,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant }) => {
           <span className="text-sm">
             {restaurant.deliveryFee === 0 
               ? "Free delivery" 
-              : `$${restaurant.deliveryFee.toFixed(2)} delivery`}
+              : `${formatCurrency(restaurant.deliveryFee)} delivery`}
           </span>
         </div>
       </div>

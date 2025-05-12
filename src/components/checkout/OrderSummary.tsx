@@ -2,6 +2,7 @@
 import React from "react";
 import { useCart } from "@/context/CartContext";
 import { Separator } from "@/components/ui/separator";
+import { formatCurrency } from "@/lib/constants";
 
 interface OrderSummaryProps {
   showItems?: boolean;
@@ -10,7 +11,7 @@ interface OrderSummaryProps {
 
 const OrderSummary: React.FC<OrderSummaryProps> = ({ 
   showItems = true,
-  deliveryFee = 2.99
+  deliveryFee = 99
 }) => {
   const { items, subtotal } = useCart();
   
@@ -25,7 +26,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({
   }, {} as Record<string, typeof items>);
 
   const total = subtotal + deliveryFee;
-  const tax = subtotal * 0.07; // 7% tax
+  const tax = subtotal * 0.05; // 5% GST
 
   return (
     <div className="space-y-4">
@@ -41,7 +42,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({
                   <span>
                     {item.quantity} × {item.menuItem.name}
                   </span>
-                  <span>${(item.menuItem.price * item.quantity).toFixed(2)}</span>
+                  <span>{formatCurrency(item.menuItem.price * item.quantity)}</span>
                 </div>
               ))}
             </div>
@@ -52,20 +53,20 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({
       <div className="space-y-2">
         <div className="flex justify-between">
           <span>Subtotal</span>
-          <span>${subtotal.toFixed(2)}</span>
+          <span>{formatCurrency(subtotal)}</span>
         </div>
         <div className="flex justify-between">
           <span>Delivery Fee</span>
-          <span>${deliveryFee.toFixed(2)}</span>
+          <span>{formatCurrency(deliveryFee)}</span>
         </div>
         <div className="flex justify-between">
-          <span>Tax</span>
-          <span>${tax.toFixed(2)}</span>
+          <span>GST (5%)</span>
+          <span>{formatCurrency(tax)}</span>
         </div>
         <Separator />
         <div className="flex justify-between font-semibold">
           <span>Total</span>
-          <span>${(total + tax).toFixed(2)}</span>
+          <span>{formatCurrency(total + tax)}</span>
         </div>
       </div>
     </div>

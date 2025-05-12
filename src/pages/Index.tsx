@@ -17,8 +17,8 @@ const Index = () => {
       <PageContainer>
         <div className="flex justify-between items-center mb-4">
           <div>
-            <h1 className="text-2xl font-bold">Food Delivery</h1>
-            <p className="text-muted-foreground">Order food from your favorite restaurants</p>
+            <h1 className="text-xl font-semibold text-orange-800">Discover</h1>
+            <p className="text-muted-foreground">Order delicious Indian food</p>
           </div>
           <Button variant="outline" size="icon" asChild>
             <a href="/search">
@@ -26,8 +26,6 @@ const Index = () => {
             </a>
           </Button>
         </div>
-        
-        <CategoryList categories={categories} />
         
         <RestaurantList 
           restaurants={featuredRestaurants} 
@@ -38,6 +36,8 @@ const Index = () => {
           restaurants={popularRestaurants} 
           title="Popular Near You" 
         />
+        
+        <CategoryList categories={categories} />
         
         <RestaurantList 
           restaurants={restaurants} 

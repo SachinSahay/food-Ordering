@@ -4,42 +4,42 @@ import { Restaurant, MenuItem, Category, Address, PaymentMethod } from "../types
 export const categories: Category[] = [
   {
     id: "1",
-    name: "Pizza",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=320&auto=format&fit=crop",
+    name: "North Indian",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=320&auto=format&fit=crop",
   },
   {
     id: "2",
-    name: "Burgers",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=320&auto=format&fit=crop",
+    name: "South Indian",
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=320&auto=format&fit=crop",
   },
   {
     id: "3",
-    name: "Sushi",
-    image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=320&auto=format&fit=crop",
+    name: "Biryani",
+    image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=320&auto=format&fit=crop",
   },
   {
     id: "4",
     name: "Desserts",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=320&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1516747773440-e5f384a3adbc?q=80&w=320&auto=format&fit=crop",
   },
   {
     id: "5",
-    name: "Indian",
-    image: "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=320&auto=format&fit=crop",
-  },
-  {
-    id: "6",
-    name: "Italian",
-    image: "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=320&auto=format&fit=crop",
-  },
-  {
-    id: "7",
     name: "Chinese",
     image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=320&auto=format&fit=crop",
   },
   {
+    id: "6",
+    name: "Thali",
+    image: "https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=320&auto=format&fit=crop",
+  },
+  {
+    id: "7",
+    name: "Street Food",
+    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=320&auto=format&fit=crop",
+  },
+  {
     id: "8",
-    name: "Mexican",
+    name: "Fast Food",
     image: "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?q=80&w=320&auto=format&fit=crop",
   }
 ];
@@ -47,187 +47,191 @@ export const categories: Category[] = [
 export const restaurants: Restaurant[] = [
   {
     id: "1",
-    name: "Pizza Haven",
-    image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=640&auto=format&fit=crop",
-    cuisine: "Italian",
+    name: "Taj Mahal Restaurant",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=640&auto=format&fit=crop",
+    cuisine: "North Indian",
     rating: 4.7,
-    deliveryFee: 2.99,
-    deliveryTime: "20-30",
+    deliveryFee: 49,
+    deliveryTime: "25-35",
     isPopular: true,
     isFeatured: true
   },
   {
     id: "2",
-    name: "Burger Palace",
-    image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=640&auto=format&fit=crop",
-    cuisine: "American",
+    name: "Dosa Paradise",
+    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=640&auto=format&fit=crop",
+    cuisine: "South Indian",
     rating: 4.5,
-    deliveryFee: 1.99,
-    deliveryTime: "15-25",
+    deliveryFee: 39,
+    deliveryTime: "20-30",
     isPopular: true
   },
   {
     id: "3",
-    name: "Sushi Master",
-    image: "https://images.unsplash.com/photo-1617196034183-421b4f3e7c62?q=80&w=640&auto=format&fit=crop",
-    cuisine: "Japanese",
+    name: "Biryani House",
+    image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=640&auto=format&fit=crop",
+    cuisine: "Hyderabadi",
     rating: 4.8,
-    deliveryFee: 3.99,
+    deliveryFee: 59,
     deliveryTime: "25-40",
     isFeatured: true
   },
   {
     id: "4",
-    name: "Taco Express",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=640&auto=format&fit=crop",
-    cuisine: "Mexican",
+    name: "Mumbai Street Food",
+    image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=640&auto=format&fit=crop",
+    cuisine: "Street Food",
     rating: 4.2,
-    deliveryFee: 1.49,
+    deliveryFee: 29,
     deliveryTime: "15-25"
   },
   {
     id: "5",
-    name: "Curry House",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=640&auto=format&fit=crop",
-    cuisine: "Indian",
+    name: "Punjab da Dhaba",
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=640&auto=format&fit=crop",
+    cuisine: "Punjabi",
     rating: 4.6,
-    deliveryFee: 2.49,
+    deliveryFee: 49,
     deliveryTime: "30-45",
     isPopular: true
   },
   {
     id: "6",
-    name: "Noodle Bar",
-    image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?q=80&w=640&auto=format&fit=crop",
-    cuisine: "Chinese",
+    name: "Delhi Chaat Corner",
+    image: "https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=640&auto=format&fit=crop",
+    cuisine: "Chaat & Snacks",
     rating: 4.3,
-    deliveryFee: 1.99,
+    deliveryFee: 39,
     deliveryTime: "20-35"
   }
 ];
 
 export const menuItems: { [key: string]: MenuItem[] } = {
-  "1": [ // Pizza Haven
+  "1": [ // Taj Mahal Restaurant
     {
       id: "1-1",
       restaurantId: "1",
-      name: "Margherita Pizza",
-      description: "Classic pizza with tomato sauce, mozzarella, and basil",
-      price: 12.99,
-      image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=320&auto=format&fit=crop",
-      category: "Pizza",
-      isPopular: true,
-      isVegetarian: true
+      name: "Butter Chicken",
+      description: "Classic North Indian dish with tender chicken in a rich tomato and butter sauce",
+      price: 299,
+      image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=320&auto=format&fit=crop",
+      category: "Main Course",
+      isPopular: true
     },
     {
       id: "1-2",
       restaurantId: "1",
-      name: "Pepperoni Pizza",
-      description: "Pizza topped with tomato sauce, mozzarella, and pepperoni",
-      price: 14.99,
-      image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=320&auto=format&fit=crop",
-      category: "Pizza",
-      isPopular: true
+      name: "Paneer Tikka Masala",
+      description: "Grilled cottage cheese cubes in a spiced tomato gravy",
+      price: 249,
+      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=320&auto=format&fit=crop",
+      category: "Main Course",
+      isPopular: true,
+      isVegetarian: true
     },
     {
       id: "1-3",
       restaurantId: "1",
-      name: "Hawaiian Pizza",
-      description: "Pizza with ham, pineapple, and cheese on a tomato base",
-      price: 15.99,
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=320&auto=format&fit=crop",
-      category: "Pizza"
+      name: "Garlic Naan",
+      description: "Flatbread with garlic and butter, cooked in a tandoor",
+      price: 49,
+      image: "https://images.unsplash.com/photo-1600935926387-12d9b03066f0?q=80&w=320&auto=format&fit=crop",
+      category: "Breads",
+      isVegetarian: true
     },
     {
       id: "1-4",
       restaurantId: "1",
-      name: "Garlic Breadsticks",
-      description: "Freshly baked breadsticks with garlic butter and herbs",
-      price: 5.99,
-      image: "https://images.unsplash.com/photo-1619531038896-deaff53d151a?q=80&w=320&auto=format&fit=crop",
-      category: "Sides",
+      name: "Dal Makhani",
+      description: "Slow-cooked black lentils with cream and butter",
+      price: 199,
+      image: "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?q=80&w=320&auto=format&fit=crop",
+      category: "Main Course",
       isVegetarian: true
     }
   ],
-  "2": [ // Burger Palace
+  "2": [ // Dosa Paradise
     {
       id: "2-1",
       restaurantId: "2",
-      name: "Classic Cheeseburger",
-      description: "Beef patty with cheese, lettuce, tomato, and special sauce",
-      price: 9.99,
-      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=320&auto=format&fit=crop",
-      category: "Burgers",
-      isPopular: true
+      name: "Masala Dosa",
+      description: "Crispy rice crepe filled with spiced potato filling served with sambar and chutney",
+      price: 149,
+      image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=320&auto=format&fit=crop",
+      category: "Dosa",
+      isPopular: true,
+      isVegetarian: true
     },
     {
       id: "2-2",
       restaurantId: "2",
-      name: "Bacon Burger",
-      description: "Beef patty with bacon, cheese, lettuce, and BBQ sauce",
-      price: 11.99,
-      image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=320&auto=format&fit=crop",
-      category: "Burgers",
-      isPopular: true
+      name: "Idli Sambar",
+      description: "Steamed rice cakes served with lentil soup and coconut chutney",
+      price: 99,
+      image: "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?q=80&w=320&auto=format&fit=crop",
+      category: "Breakfast",
+      isPopular: true,
+      isVegetarian: true
     },
     {
       id: "2-3",
       restaurantId: "2",
-      name: "Veggie Burger",
-      description: "Plant-based patty with lettuce, tomato, and vegan mayo",
-      price: 10.99,
-      image: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=320&auto=format&fit=crop",
-      category: "Burgers",
+      name: "Uttapam",
+      description: "Thick pancake topped with onions, tomatoes and cilantro",
+      price: 129,
+      image: "https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=320&auto=format&fit=crop",
+      category: "Breakfast",
       isVegetarian: true
     },
     {
       id: "2-4",
       restaurantId: "2",
-      name: "French Fries",
-      description: "Crispy golden french fries with sea salt",
-      price: 3.99,
-      image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=320&auto=format&fit=crop",
-      category: "Sides",
+      name: "Filter Coffee",
+      description: "Traditional South Indian coffee decoction with milk",
+      price: 59,
+      image: "https://images.unsplash.com/photo-1559070169-a3077159ee16?q=80&w=320&auto=format&fit=crop",
+      category: "Beverages",
       isVegetarian: true
     }
   ],
-  "3": [ // Sushi Master
+  "3": [ // Biryani House
     {
       id: "3-1",
       restaurantId: "3",
-      name: "California Roll",
-      description: "Crab, avocado, cucumber wrapped in seaweed and rice",
-      price: 8.99,
-      image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=320&auto=format&fit=crop",
-      category: "Rolls",
+      name: "Hyderabadi Chicken Biryani",
+      description: "Aromatic basmati rice cooked with tender chicken and authentic spices",
+      price: 269,
+      image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=320&auto=format&fit=crop",
+      category: "Biryani",
       isPopular: true
     },
     {
       id: "3-2",
       restaurantId: "3",
-      name: "Salmon Nigiri",
-      description: "Fresh salmon slice over pressed rice",
-      price: 6.99,
-      image: "https://images.unsplash.com/photo-1617196034183-421b4f3e7c62?q=80&w=320&auto=format&fit=crop",
-      category: "Nigiri",
-      isPopular: true
+      name: "Veg Biryani",
+      description: "Fragrant rice with mixed vegetables and spices",
+      price: 199,
+      image: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=320&auto=format&fit=crop",
+      category: "Biryani",
+      isVegetarian: true
     },
     {
       id: "3-3",
       restaurantId: "3",
-      name: "Spicy Tuna Roll",
-      description: "Spicy tuna and cucumber wrapped in seaweed and rice",
-      price: 9.99,
-      image: "https://images.unsplash.com/photo-1615361200141-f45040f367be?q=80&w=320&auto=format&fit=crop",
-      category: "Rolls"
+      name: "Mutton Biryani",
+      description: "Traditional dish with tender mutton pieces and fragrant rice",
+      price: 299,
+      image: "https://images.unsplash.com/photo-1642821373181-696a54913da9?q=80&w=320&auto=format&fit=crop",
+      category: "Biryani",
+      isPopular: true
     },
     {
       id: "3-4",
       restaurantId: "3",
-      name: "Miso Soup",
-      description: "Traditional Japanese soup with tofu, seaweed, and green onions",
-      price: 3.99,
-      image: "https://images.unsplash.com/photo-1607301406259-dfb186e15de8?q=80&w=320&auto=format&fit=crop",
+      name: "Raita",
+      description: "Yogurt with cucumber and mild spices",
+      price: 49,
+      image: "https://images.unsplash.com/photo-1539252554935-80c8d6afa6ec?q=80&w=320&auto=format&fit=crop",
       category: "Sides",
       isVegetarian: true
     }
@@ -238,20 +242,20 @@ export const savedAddresses: Address[] = [
   {
     id: "1",
     name: "Home",
-    line1: "123 Main St",
-    city: "San Francisco",
-    state: "CA",
-    postalCode: "94105",
+    line1: "42 Jasmine Gardens, Malviya Nagar",
+    city: "New Delhi",
+    state: "Delhi",
+    postalCode: "110017",
     isDefault: true
   },
   {
     id: "2",
-    name: "Work",
-    line1: "456 Market St",
-    line2: "Suite 500",
-    city: "San Francisco",
-    state: "CA",
-    postalCode: "94103"
+    name: "Office",
+    line1: "401 Techpark Building",
+    line2: "Whitefield Main Road",
+    city: "Bengaluru",
+    state: "Karnataka",
+    postalCode: "560066"
   }
 ];
 
@@ -259,20 +263,20 @@ export const paymentMethods: PaymentMethod[] = [
   {
     id: "1",
     type: "card",
-    name: "Visa ending in 4242",
+    name: "HDFC Bank Card ending in 4242",
     lastFour: "4242",
     isDefault: true
   },
   {
     id: "2",
     type: "card",
-    name: "Mastercard ending in 5555",
+    name: "ICICI Bank Card ending in 5555",
     lastFour: "5555"
   },
   {
     id: "3",
     type: "upi",
-    name: "Google Pay"
+    name: "Google Pay (user@okicici)"
   },
   {
     id: "4",

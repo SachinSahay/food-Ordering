@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { MenuItem as MenuItemType } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { Badge } from "@/components/ui/badge";
+import { formatCurrency } from "@/lib/constants";
 
 interface MenuItemProps {
   item: MenuItemType;
@@ -25,7 +26,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
             )}
           </div>
           <span className="font-semibold text-food-dark">
-            ${item.price.toFixed(2)}
+            {formatCurrency(item.price)}
           </span>
         </div>
         
